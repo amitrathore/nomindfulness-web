@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Retreat — Nomindfulness</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background-color: #F8F5F0; color: #1A1814; }
+    .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .text-warm-gray { color: #6B6560; }
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1A1814;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover { color: #8B7355; }
+    .cta-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid #1A1814;
+      padding: 14px 36px;
+      background: transparent;
+      color: #1A1814;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-btn:hover { background: #1A1814; color: #F8F5F0; }
+    .cta-btn-light {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid #F8F5F0;
+      padding: 14px 36px;
+      background: transparent;
+      color: #F8F5F0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-btn-light:hover { background: #F8F5F0; color: #1A1814; }
+    .section-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #8B7355;
+    }
+    .include-item::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: #8B7355;
+      border-radius: 50%;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body class="w-[1440px] bg-[#F8F5F0]">
+
+  <!-- Navigation -->
+  <nav data-design-id="nav-primary-a1b2c3" class="fixed top-0 left-0 right-0 w-[1440px] z-50 flex items-center justify-between px-[120px] py-7 bg-[#F8F5F0]/95 backdrop-blur-sm border-b border-[#E8E4DF]">
+    <a href="#" class="flex items-center gap-3 no-underline">
+      <div class="relative w-7 h-7 flex items-center justify-center">
+        <div class="absolute w-7 h-7 rounded-full border border-[#8B7355]"></div>
+        <div class="w-[3px] h-[3px] rounded-full bg-[#8B7355]"></div>
+      </div>
+      <span class="font-display text-[1.15rem] font-light tracking-[0.12em] text-[#1A1814] uppercase">Nomindfulness</span>
+    </a>
+    <div class="flex items-center gap-10">
+      <a href="#" class="nav-link text-[#8B7355]">The Retreat</a>
+      <a href="#" class="nav-link">Teachings</a>
+      <a href="#" class="nav-link">The Teacher</a>
+      <a href="#" class="nav-link">Pricing</a>
+    </div>
+    <a href="#" class="nav-link border border-[#1A1814] px-7 py-3 hover:bg-[#1A1814] hover:text-[#F8F5F0] transition-all duration-300">Apply</a>
+  </nav>
+
+  <!-- Hero -->
+  <header data-design-id="retreat-hero-d4e5f6" class="relative w-full min-h-[900px] overflow-hidden">
+    <img src="https://cdn.abacus.ai/images/cc9018f2-85e5-48b9-8233-f344e99c231a.png" alt="Cold Springs mountains" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-[#1A1814]/50"></div>
+    <div class="relative z-10 flex flex-col justify-end min-h-[900px] px-[120px] pb-24">
+      <p class="section-eyebrow text-[#E8E4DF]/70 mb-5">Cold Springs, California</p>
+      <h1 class="font-display font-light text-[5rem] leading-[1.05] text-[#F8F5F0] max-w-3xl">
+        A House in the<br><em class="italic">Mountains.</em><br>A Space Without<br><em class="italic">Walls.</em>
+      </h1>
+    </div>
+  </header>
+
+  <main data-design-id="main-retreat-g7h8i9">
+
+    <!-- Location Overview -->
+    <section data-design-id="location-overview-j1k2l3" class="px-[120px] py-[100px] flex gap-20 items-start">
+      <div class="w-[45%]">
+        <img src="https://cdn.abacus.ai/images/3596a8da-d6f3-4500-9f8f-178a2fa902a3.png" alt="Retreat house" class="w-full h-[440px] object-cover">
+      </div>
+      <div class="flex-1 pt-4">
+        <p class="section-eyebrow mb-6">The Location</p>
+        <h2 class="font-display font-light text-[3rem] leading-[1.15] text-[#1A1814] mb-8">
+          Cold Springs, CA<br><em class="italic">The Sierra Nevada Foothills</em>
+        </h2>
+        <p class="text-warm-gray text-[1.05rem] leading-[1.95] mb-6">
+          Three hours south of San Francisco, the mountains rise into a different atmosphere. Here, at 4,200 feet elevation, the air changes. The silence is not the silence of noise-canceling headphones. It is the silence of distance from the world's constant insistence on itself.
+        </p>
+        <p class="text-warm-gray text-[1.05rem] leading-[1.95] mb-6">
+          Cold Springs is a small community nestled in pine forest — rugged, quiet, and inhospitable to distraction. The retreat house sits on several acres of private land with views that make the scale of ordinary concerns suddenly visible for what they are.
+        </p>
+        <p class="text-warm-gray text-[1.05rem] leading-[1.95]">
+          The location is not incidental. Mountains have always been the traditional setting for this kind of inquiry. There is a reason.
+        </p>
+        <div class="mt-12 flex gap-12">
+          <div class="border-t border-[#E8E4DF] pt-6">
+            <p class="font-display font-light text-[2rem] text-[#1A1814]">4,200 ft</p>
+            <p class="text-[0.65rem] tracking-[0.2em] uppercase text-warm-gray mt-1">Elevation</p>
+          </div>
+          <div class="border-t border-[#E8E4DF] pt-6">
+            <p class="font-display font-light text-[2rem] text-[#1A1814]">~3 hrs</p>
+            <p class="text-[0.65rem] tracking-[0.2em] uppercase text-warm-gray mt-1">From San Francisco</p>
+          </div>
+          <div class="border-t border-[#E8E4DF] pt-6">
+            <p class="font-display font-light text-[2rem] text-[#1A1814]">Private</p>
+            <p class="text-[0.65rem] tracking-[0.2em] uppercase text-warm-gray mt-1">Acreage & Access</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-t border-[#E8E4DF] mx-[120px]"></div>
+
+    <!-- The House -->
+    <section data-design-id="house-section-v4w5x6" class="px-[120px] py-[100px]">
+      <div class="text-center mb-20">
+        <p class="section-eyebrow mb-5">The Property</p>
+        <h2 class="font-display font-light text-[3.2rem] text-[#1A1814] leading-[1.15] max-w-xl mx-auto">
+          Four bedrooms.<br><em class="italic">One purpose.</em>
+        </h2>
+      </div>
+      <div class="grid grid-cols-2 gap-6 mb-20">
+        <div class="h-[420px] overflow-hidden">
+          <img src="https://cdn.abacus.ai/images/3596a8da-d6f3-4500-9f8f-178a2fa902a3.png" alt="House exterior" class="w-full h-full object-cover">
+        </div>
+        <div class="h-[420px] overflow-hidden">
+          <img src="https://cdn.abacus.ai/images/6fa9528d-ab48-40b0-9b37-d901f617d35f.png" alt="Meditation room" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <div class="grid grid-cols-3 gap-16">
+        <article data-design-id="house-feature-1-y7z8a9" class="border-t border-[#E8E4DF] pt-10">
+          <h3 class="font-display font-light text-[1.5rem] text-[#1A1814] mb-4">Private Rooms</h3>
+          <p class="text-warm-gray text-[0.9rem] leading-[1.9]">Each of the four bedrooms is private, comfortable, and spare. Nothing in the rooms competes with the work. Views of pine forest and ridge line from every window.</p>
+        </article>
+        <article data-design-id="house-feature-2-b1c2d3" class="border-t border-[#E8E4DF] pt-10">
+          <h3 class="font-display font-light text-[1.5rem] text-[#1A1814] mb-4">Practice Hall</h3>
+          <p class="text-warm-gray text-[0.9rem] leading-[1.9]">A dedicated, stripped room for sitting practice and direct dialogue with the teacher. No decoration. Natural light from floor-level windows onto the forest floor.</p>
+        </article>
+        <article data-design-id="house-feature-3-e4f5g6" class="border-t border-[#E8E4DF] pt-10">
+          <h3 class="font-display font-light text-[1.5rem] text-[#1A1814] mb-4">Common Gathering Space</h3>
+          <p class="text-warm-gray text-[0.9rem] leading-[1.9]">Meals are taken together in the common room — unhurried, nourishing, and woven into the inquiry. The table is as much a teaching space as the practice hall.</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="border-t border-[#E8E4DF] mx-[120px]"></div>
+
+    <!-- Schedule / Format -->
+    <section data-design-id="schedule-section-s1t2u3" class="px-[120px] py-[100px]">
+      <div class="flex gap-24">
+        <div class="w-[38%]">
+          <p class="section-eyebrow mb-6">The Format</p>
+          <h2 class="font-display font-light text-[3rem] leading-[1.15] text-[#1A1814] mb-8">
+            A Weekend<br>Without a<br><em class="italic">Schedule.</em>
+          </h2>
+          <p class="text-warm-gray text-[1.0rem] leading-[1.9]">
+            There is no rigid schedule because this work does not happen on a timetable. There is a rhythm to the days that has proven itself — and within that rhythm, the teaching emerges when the conditions are right, not when the clock says so.
+          </p>
+        </div>
+        <div class="flex-1">
+          <div class="space-y-0">
+            <div class="border-b border-[#E8E4DF] py-8 flex gap-10">
+              <p class="text-[#8B7355] text-[0.65rem] tracking-[0.2em] uppercase w-32 mt-1 shrink-0">Friday</p>
+              <div>
+                <p class="font-display font-light text-[1.4rem] text-[#1A1814] mb-2">Arrival & Opening Dialogue</p>
+                <p class="text-warm-gray text-[0.9rem] leading-[1.8]">Participants arrive in the late afternoon. An unhurried meal. The teacher meets each person where they are. No formal teaching yet — only honest meeting.</p>
+              </div>
+            </div>
+            <div class="border-b border-[#E8E4DF] py-8 flex gap-10">
+              <p class="text-[#8B7355] text-[0.65rem] tracking-[0.2em] uppercase w-32 mt-1 shrink-0">Saturday</p>
+              <div>
+                <p class="font-display font-light text-[1.4rem] text-[#1A1814] mb-2">Deep Inquiry</p>
+                <p class="text-warm-gray text-[0.9rem] leading-[1.8]">The full day is given over to the work. Morning sitting, individual dialogues, walking in the forest, afternoon dialogue. Meals as continuation of the inquiry. The evening is often when something shifts.</p>
+              </div>
+            </div>
+            <div class="border-b border-[#E8E4DF] py-8 flex gap-10">
+              <p class="text-[#8B7355] text-[0.65rem] tracking-[0.2em] uppercase w-32 mt-1 shrink-0">Sunday</p>
+              <div>
+                <p class="font-display font-light text-[1.4rem] text-[#1A1814] mb-2">Integration & Departure</p>
+                <p class="text-warm-gray text-[0.9rem] leading-[1.8]">Morning practice. Closing dialogue as a group. Time to sit with what has happened before the descent back to ordinary life. Departure after lunch.</p>
+              </div>
+            </div>
+            <div class="pt-8 flex gap-10">
+              <p class="text-[#8B7355] text-[0.65rem] tracking-[0.2em] uppercase w-32 mt-1 shrink-0">Throughout</p>
+              <div>
+                <p class="font-display font-light text-[1.4rem] text-[#1A1814] mb-2">Continuous Availability</p>
+                <p class="text-warm-gray text-[0.9rem] leading-[1.8]">The teacher is present throughout the weekend, not only during formal sessions. At a retreat of four, there is no separation between teaching and everything else.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border-t border-[#E8E4DF] mx-[120px]"></div>
+
+    <!-- What's Included -->
+    <section data-design-id="included-section-k0l1m2" class="px-[120px] py-[100px]">
+      <div class="text-center mb-16">
+        <p class="section-eyebrow mb-5">All-Inclusive</p>
+        <h2 class="font-display font-light text-[3rem] text-[#1A1814]">Everything That Matters<br><em class="italic">is Included</em></h2>
+      </div>
+      <div class="grid grid-cols-2 gap-x-24 gap-y-4 max-w-3xl mx-auto">
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Private bedroom with mountain views</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">All meals, prepared on-site</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Unlimited direct access to the teacher</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Morning tea and sitting practice</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Individual and group dialogue sessions</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Access to private forest trails</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Pre-retreat preparation call with teacher</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Post-retreat follow-up correspondence</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">iRealization reading materials curated for you</p>
+        <p class="include-item text-warm-gray text-[0.95rem] py-3 border-b border-[#E8E4DF]">Total digital silence — no Wi-Fi in the house</p>
+      </div>
+    </section>
+
+    <!-- CTA Full Width Image -->
+    <section data-design-id="retreat-cta-n3o4p5" class="relative">
+      <img src="https://cdn.abacus.ai/images/4031189b-6486-43dc-b346-16aff414cf4e.png" alt="Mountain meditation" class="w-full h-[420px] object-cover">
+      <div class="absolute inset-0 bg-[#1A1814]/55 flex flex-col items-center justify-center text-center">
+        <h2 class="font-display font-light text-[3rem] text-[#F8F5F0] mb-8 max-w-2xl leading-[1.2]">
+          The mountains are three hours away.<br><em class="italic">The shift begins now.</em>
+        </h2>
+        <a href="#" class="cta-btn-light">Apply for the Retreat</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer data-design-id="footer-main-q6r7s8" class="px-[120px] py-16 border-t border-[#E8E4DF] flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="relative w-6 h-6 flex items-center justify-center">
+        <div class="absolute w-6 h-6 rounded-full border border-[#8B7355]"></div>
+        <div class="w-[3px] h-[3px] rounded-full bg-[#8B7355]"></div>
+      </div>
+      <span class="font-display text-[0.95rem] font-light tracking-[0.12em] text-[#1A1814] uppercase">Nomindfulness</span>
+    </div>
+    <div class="flex items-center gap-10">
+      <a href="#" class="nav-link">Homepage</a>
+      <a href="#" class="nav-link">The Retreat</a>
+      <a href="#" class="nav-link">Teachings</a>
+      <a href="#" class="nav-link">Apply</a>
+    </div>
+    <p class="text-warm-gray text-[0.7rem] tracking-wide">Cold Springs, CA &nbsp;·&nbsp; © 2026 Nomindfulness</p>
+  </footer>
+
+</body>
+</html>

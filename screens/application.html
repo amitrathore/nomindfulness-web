@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Application — Nomindfulness</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background-color: #F8F5F0; color: #1A1814; }
+    .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+    .text-warm-gray { color: #6B6560; }
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1A1814;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .nav-link:hover { color: #8B7355; }
+    .section-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #8B7355;
+    }
+    .form-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #1A1814;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .form-input {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #E8E4DF;
+      padding: 14px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #1A1814;
+      outline: none;
+      transition: border-color 0.2s ease;
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+    .form-input:focus { border-color: #8B7355; }
+    .form-input::placeholder { color: #B0ABA7; }
+    .form-textarea {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #E8E4DF;
+      padding: 16px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #1A1814;
+      outline: none;
+      transition: border-color 0.2s ease;
+      resize: vertical;
+      min-height: 140px;
+      border-radius: 0;
+    }
+    .form-textarea:focus { border-color: #8B7355; }
+    .form-textarea::placeholder { color: #B0ABA7; }
+    .form-select {
+      width: 100%;
+      background: #FFFFFF;
+      border: 1px solid #E8E4DF;
+      padding: 14px 18px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #1A1814;
+      outline: none;
+      transition: border-color 0.2s ease;
+      -webkit-appearance: none;
+      border-radius: 0;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='https://i.etsystatic.com/31715137/r/il/974327/3424811095/il_fullxfull.3424811095_dqt1.jpg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238B7355' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 18px center;
+    }
+    .form-select:focus { border-color: #8B7355; }
+    .submit-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border: 1px solid #1A1814;
+      padding: 18px 56px;
+      background: #1A1814;
+      color: #F8F5F0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover { background: transparent; color: #1A1814; }
+    .question-note {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.78rem;
+      color: #B0ABA7;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid #E8E4DF;
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="w-[1440px] bg-[#F8F5F0]">
+
+  <!-- Navigation -->
+  <nav data-design-id="nav-primary-a1b2c3" class="fixed top-0 left-0 right-0 w-[1440px] z-50 flex items-center justify-between px-[120px] py-7 bg-[#F8F5F0]/95 backdrop-blur-sm border-b border-[#E8E4DF]">
+    <a href="#" class="flex items-center gap-3 no-underline">
+      <div class="relative w-7 h-7 flex items-center justify-center">
+        <div class="absolute w-7 h-7 rounded-full border border-[#8B7355]"></div>
+        <div class="w-[3px] h-[3px] rounded-full bg-[#8B7355]"></div>
+      </div>
+      <span class="font-display text-[1.15rem] font-light tracking-[0.12em] text-[#1A1814] uppercase">Nomindfulness</span>
+    </a>
+    <div class="flex items-center gap-10">
+      <a href="#" class="nav-link">The Retreat</a>
+      <a href="#" class="nav-link">Teachings</a>
+      <a href="#" class="nav-link">The Teacher</a>
+      <a href="#" class="nav-link">Pricing</a>
+    </div>
+    <span class="nav-link border border-[#8B7355] text-[#8B7355] px-7 py-3">Application</span>
+  </nav>
+
+  <!-- Page Header -->
+  <header data-design-id="application-header-d4e5f6" class="pt-[180px] pb-20 px-[120px] border-b border-[#E8E4DF]">
+    <div class="grid grid-cols-2 gap-24 items-end">
+      <div>
+        <p class="section-eyebrow mb-6">Application</p>
+        <h1 class="font-display font-light text-[5rem] leading-[1.0] text-[#1A1814]">
+          Begin Here.<br><em class="italic">Honestly.</em>
+        </h1>
+      </div>
+      <div class="pb-2">
+        <p class="text-warm-gray text-[1.0rem] leading-[1.95] mb-5">
+          The application is not a formality. It is the first act of inquiry. We ask these questions because the retreat itself requires the same quality of honest attention — and because we want to ensure that the weekend serves you rather than disappoints you.
+        </p>
+        <p class="text-warm-gray text-[0.88rem] leading-[1.8]">
+          Please allow 20–30 minutes. Write from the actual truth of your experience, not how you believe you should sound. The teacher reads every application personally.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main data-design-id="main-application-g7h8i9">
+    <form data-design-id="application-form-m4n5o6" action="#" class="px-[120px] py-[80px]">
+
+      <!-- Section I: Contact & Logistics -->
+      <section data-design-id="section-contact-j1k2l3" class="mb-20">
+        <div class="flex gap-20 mb-16">
+          <div class="w-[30%]">
+            <p class="section-eyebrow mb-4">Section I</p>
+            <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Contact &<br>Logistics</h2>
+          </div>
+          <div class="flex-1 grid grid-cols-2 gap-8">
+            <div>
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-input" placeholder="Your first name">
+            </div>
+            <div>
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-input" placeholder="Your last name">
+            </div>
+            <div>
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" placeholder="your@email.com">
+            </div>
+            <div>
+              <label class="form-label">City / Location</label>
+              <input type="text" class="form-input" placeholder="San Francisco, CA">
+            </div>
+            <div>
+              <label class="form-label">I am applying as</label>
+              <select class="form-select">
+                <option value="" disabled selected>Select one</option>
+                <option>An individual</option>
+                <option>A couple / partnership</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Preferred retreat date</label>
+              <select class="form-select">
+                <option value="" disabled selected>Select a date</option>
+                <option>June 20–22, 2026 — Summer Solstice</option>
+                <option>August 14–16, 2026 — Late Summer</option>
+                <option>October 9–11, 2026 — Autumn</option>
+                <option>December 5–7, 2026 — Winter Closing</option>
+                <option>No preference / flexible</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">How did you hear about us?</label>
+              <select class="form-select">
+                <option value="" disabled selected>Select one</option>
+                <option>iRealization.com</option>
+                <option>Personal recommendation</option>
+                <option>Online search</option>
+                <option>Social media</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="form-label">Dietary requirements</label>
+              <input type="text" class="form-input" placeholder="e.g. vegetarian, gluten-free, none">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider mb-20">
+
+      <!-- Section II: Background & Context -->
+      <section data-design-id="section-background-v4w5x6" class="mb-20">
+        <div class="flex gap-20 mb-12">
+          <div class="w-[30%]">
+            <p class="section-eyebrow mb-4">Section II</p>
+            <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Background &<br>Context</h2>
+            <p class="text-warm-gray text-[0.82rem] leading-[1.8] mt-4">We are not interested in your resume. We are interested in your inner life. These questions are about where you actually are.
+            </p>
+          </div>
+          <div class="flex-1 space-y-10">
+            <div>
+              <label class="form-label">What do you do professionally? (One sentence is enough)</label>
+              <input type="text" class="form-input" placeholder="Brief description of your work">
+            </div>
+            <div>
+              <label class="form-label">What has been your relationship with meditation, contemplative practice, or spirituality? Be honest about what has worked and what hasn’t.</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="Describe your actual experience — not the ideal version..."></textarea>
+              <p class="question-note">No experience needed. Genuine reflection required.</p>
+            </div>
+            <div>
+              <label class="form-label">Have you read anything on iRealization.com? If so, what affected you most?</label>
+              <textarea class="form-textarea" style="min-height:120px" placeholder="Specific article, idea, or passage — or note if you are new to the work."></textarea>
+            </div>
+            <div>
+              <label class="form-label">What teachers, traditions, or frameworks have shaped your thinking about consciousness, mind, or the nature of reality?</label>
+              <textarea class="form-textarea" style="min-height:140px" placeholder="Advaita, Zen, philosophy, neuroscience, therapy — name what has mattered."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider mb-20">
+
+      <!-- Section III: The Actual Question -->
+      <section data-design-id="section-inquiry-s1t2u3" class="mb-20">
+        <div class="flex gap-20 mb-12">
+          <div class="w-[30%]">
+            <p class="section-eyebrow mb-4">Section III</p>
+            <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">The Actual<br><em class="italic">Question</em></h2>
+            <p class="text-warm-gray text-[0.82rem] leading-[1.8] mt-4">This section is the heart of the application. Write carefully. Write honestly. This is not a test — there are no correct answers. Only real ones.</p>
+          </div>
+          <div class="flex-1 space-y-10">
+            <div>
+              <label class="form-label">What is the central unresolved question in your inner life right now? Not a philosophical question — the one that keeps returning.</label>
+              <textarea class="form-textarea" style="min-height:180px" placeholder="Describe the question as it actually lives in you, not how you would phrase it in conversation..."></textarea>
+              <p class="question-note">This is the most important question in the application. Take your time.</p>
+            </div>
+            <div>
+              <label class="form-label">You have achieved things most people cannot. Why is that not enough? What is missing?</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="Be as direct as the question demands."></textarea>
+              <p class="question-note">This question may feel uncomfortable. That is intentional.</p>
+            </div>
+            <div>
+              <label class="form-label">When do you feel most like yourself? And when do you feel least like yourself? Describe both.</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="Concrete, specific situations rather than generalizations."></textarea>
+            </div>
+            <div>
+              <label class="form-label">What do you hope is true about the nature of consciousness or the self? And what do you suspect might be true that you find difficult to accept?</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="The second part of this question is the one that matters more."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider mb-20">
+
+      <!-- Section IV: Readiness & Capacity -->
+      <section data-design-id="section-readiness-k0l1m2" class="mb-20">
+        <div class="flex gap-20 mb-12">
+          <div class="w-[30%]">
+            <p class="section-eyebrow mb-4">Section IV</p>
+            <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Readiness &<br>Capacity</h2>
+            <p class="text-warm-gray text-[0.82rem] leading-[1.8] mt-4">We want to ensure the retreat is appropriate for where you are. These questions assess practical and psychological readiness.</p>
+          </div>
+          <div class="flex-1 space-y-10">
+            <div>
+              <label class="form-label">Are you currently working with a therapist, psychiatrist, or taking psychiatric medication? (This is not disqualifying — we ask for context.)</label>
+              <textarea class="form-textarea" style="min-height:100px" placeholder="Honest answer. No judgment."></textarea>
+            </div>
+            <div>
+              <label class="form-label">Is there anything in your current life circumstances that would make it difficult to be fully present and not distracted for a full weekend? A major crisis, deadline, or decision?</label>
+              <textarea class="form-textarea" style="min-height:120px" placeholder="If yes, describe briefly. If the timing is genuinely not right, there will be another retreat."></textarea>
+            </div>
+            <div>
+              <label class="form-label">The retreat involves extended silence and the possibility that your fundamental assumptions about who you are will be challenged. How do you feel about that — not in theory, but actually?</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="Honest ambivalence is a much better sign than performed readiness."></textarea>
+              <p class="question-note">Saying you are “completely ready” may be less honest than saying you are both drawn and apprehensive.</p>
+            </div>
+            <div>
+              <label class="form-label">What would it mean for you if the weekend changed nothing? How do you hold that possibility?</label>
+              <textarea class="form-textarea" style="min-height:140px" placeholder="This question tests something important. Sit with it before answering."></textarea>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider mb-20">
+
+      <!-- Section V: Final -->
+      <section data-design-id="section-final-n3o4p5" class="mb-20">
+        <div class="flex gap-20 mb-12">
+          <div class="w-[30%]">
+            <p class="section-eyebrow mb-4">Section V</p>
+            <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Final<br>Word</h2>
+          </div>
+          <div class="flex-1 space-y-10">
+            <div>
+              <label class="form-label">Is there anything else you want the teacher to know before reading your application?</label>
+              <textarea class="form-textarea" style="min-height:160px" placeholder="This is your space. Use it as you see fit."></textarea>
+            </div>
+            <div>
+              <label class="form-label">A note on the investment: The retreat requires a $2,999 per person investment. Can you confirm that this is workable for you, without financial strain that would itself become a distraction?</label>
+              <select class="form-select">
+                <option value="" disabled selected>Select one</option>
+                <option>Yes, this is workable</option>
+                <option>Yes, for a couple ($4,999)</option>
+                <option>I have a question about this — please reach out</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Submission -->
+      <section data-design-id="section-submit-q6r7s8" class="border-t border-[#E8E4DF] pt-16 flex items-start justify-between">
+        <div class="max-w-xl">
+          <p class="text-warm-gray text-[0.88rem] leading-[1.85] mb-3">
+            By submitting this application you understand that it does not guarantee a place at the retreat. The teacher reads every application and will be in touch within 5–7 days. If accepted, you will receive details about the preparation call and deposit process.
+          </p>
+          <p class="text-warm-gray text-[0.82rem] leading-[1.7]">
+            Your responses are read only by the teacher. Nothing you share here is shared further.
+          </p>
+        </div>
+        <div class="text-right">
+          <button data-design-id="submit-btn-z1a2b3" type="button" class="submit-btn">Submit Application</button>
+          <p class="text-warm-gray text-[0.7rem] tracking-wide mt-4">Allow 20–30 minutes &nbsp;·&nbsp; Personal review guaranteed</p>
+        </div>
+      </section>
+
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer data-design-id="footer-main-c4d5e6" class="px-[120px] py-16 border-t border-[#E8E4DF] flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="relative w-6 h-6 flex items-center justify-center">
+        <div class="absolute w-6 h-6 rounded-full border border-[#8B7355]"></div>
+        <div class="w-[3px] h-[3px] rounded-full bg-[#8B7355]"></div>
+      </div>
+      <span class="font-display text-[0.95rem] font-light tracking-[0.12em] text-[#1A1814] uppercase">Nomindfulness</span>
+    </div>
+    <div class="flex items-center gap-10">
+      <a href="#" class="nav-link">Homepage</a>
+      <a href="#" class="nav-link">The Retreat</a>
+      <a href="#" class="nav-link">Teachings</a>
+      <a href="#" class="nav-link">Pricing</a>
+    </div>
+    <p class="text-warm-gray text-[0.7rem] tracking-wide">Cold Springs, CA &nbsp;·&nbsp; © 2026 Nomindfulness</p>
+  </footer>
+
+</body>
+</html>

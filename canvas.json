@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "screens": [
+    {"screen_id": "homepage", "frame_kind": "desktop", "label": "Homepage"},
+    {"screen_id": "about-teacher", "frame_kind": "desktop", "label": "About the Teacher"},
+    {"screen_id": "the-retreat", "frame_kind": "desktop", "label": "The Retreat"},
+    {"screen_id": "teachings", "frame_kind": "desktop", "label": "Teachings & Philosophy"},
+    {"screen_id": "pricing", "frame_kind": "desktop", "label": "Pricing & Booking"},
+    {"screen_id": "application", "frame_kind": "desktop", "label": "Application"}
+  ]
+}
