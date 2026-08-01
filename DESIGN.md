@@ -39,7 +39,12 @@ rounded:
 ---
 
 ## Overview
-Nomindfulness is an ultra-exclusive mountain meditation retreat — a portal for high-intellect, high-achieving individuals who have mastered the external world but seek the final frontier: direct self-realization. The brand communicates supreme confidence, intellectual rigor, and rare access. The aesthetic is spare, deliberate, and deeply premium — like a Zen monastery designed by Aman.
+Nomindfulness offers direct self-inquiry in two deliberately small formats: a focused one-day intensive and an ultra-exclusive three-day mountain retreat. Both serve high-intellect, high-achieving individuals who have mastered the external world but seek the final frontier: direct self-realization. The retreat remains the flagship; the intensive is a complete, lower-commitment entry into the same work. The brand communicates supreme confidence, intellectual rigor, and rare access. The aesthetic is spare, deliberate, and deeply premium — like a Zen monastery designed by Aman.
+
+## Product hierarchy
+- **One-Day Intensive**: A concentrated format for participants with a mature, specific question. $999 per attendee, including lunch and refreshments. Location, capacity, and schedule remain to be confirmed.
+- **Three-Day Flagship Retreat**: The complete residential mountain container, all-inclusive and limited to four participants.
+- **Programs** is the primary navigation label. It leads to a duration-led comparison (“1 / 3”) so visitors choose by the depth their question requires, not by prestige.
 
 ## Color usage
 - **Background #F8F5F0**: The primary canvas — warm cream, never harsh white. Every page breathes on this ground.

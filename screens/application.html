@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Apply for a private Nomindfulness retreat and begin the inquiry with direct, honest reflection.">
+  <meta name="description" content="Apply for a Nomindfulness one-day intensive or three-day flagship retreat and begin with direct, honest reflection.">
   <meta property="og:site_name" content="Nomindfulness">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Application — Nomindfulness">
-  <meta property="og:description" content="Apply for a private Nomindfulness retreat and begin the inquiry with direct, honest reflection.">
+  <meta property="og:description" content="Apply for a Nomindfulness one-day intensive or three-day flagship retreat and begin with direct, honest reflection.">
   <meta property="og:url" content="https://nomindfulness.com/screens/application.html">
   <meta property="og:image" content="https://nomindfulness.com/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -15,7 +15,7 @@
   <meta property="og:image:alt" content="A quiet mountain lake and forest landscape for the Nomindfulness retreat.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Application — Nomindfulness">
-  <meta name="twitter:description" content="Apply for a private Nomindfulness retreat and begin the inquiry with direct, honest reflection.">
+  <meta name="twitter:description" content="Apply for a Nomindfulness one-day intensive or three-day flagship retreat and begin with direct, honest reflection.">
   <meta name="twitter:image" content="https://nomindfulness.com/assets/og-image.jpg">
   <title>Application — Nomindfulness</title>
   <link rel="canonical" href="https://nomindfulness.com/screens/application.html">
@@ -143,7 +143,7 @@
       <span class="font-display text-[1.15rem] font-light tracking-[0.12em] text-[#1A1814] uppercase">Nomindfulness</span>
     </a>
     <div class="flex items-center gap-10">
-      <a href="the-retreat.html" class="nav-link">The Retreat</a>
+      <a href="programs.html" class="nav-link">Programs</a>
       <a href="teachings.html" class="nav-link">Teachings</a>
       <a href="about-teacher.html" class="nav-link">The Teacher</a>
       <a href="pricing.html" class="nav-link">Pricing</a>
@@ -162,7 +162,7 @@
       </div>
       <div class="pb-2">
         <p class="text-warm-gray text-[1.0rem] leading-[1.95] mb-5">
-          The application is not a formality. It is the first act of inquiry. We ask these questions because the retreat itself requires the same quality of honest attention — and because we want to ensure that the weekend serves you rather than disappoints you.
+          The application is not a formality. It is the first act of inquiry. We ask these questions because both programs require the same quality of honest attention — and because we want to find the right container for your question.
         </p>
         <p class="text-warm-gray text-[0.88rem] leading-[1.8]">
           Please allow 20–30 minutes. Write from the actual truth of your experience, not how you believe you should sound. The teacher reads every application personally.
@@ -182,6 +182,15 @@
             <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Contact &<br>Logistics</h2>
           </div>
           <div class="flex-1 grid grid-cols-2 gap-8">
+            <div class="col-span-2">
+              <label class="form-label">Which program are you applying for?</label>
+              <select class="form-select" id="program-choice" name="program">
+                <option value="" disabled selected>Select a program</option>
+                <option value="one-day">One-Day Intensive</option>
+                <option value="retreat">Three-Day Flagship Retreat</option>
+                <option value="unsure">I am unsure — help me choose</option>
+              </select>
+            </div>
             <div>
               <label class="form-label">First Name</label>
               <input type="text" class="form-input" placeholder="Your first name">
@@ -207,13 +216,13 @@
               </select>
             </div>
             <div>
-              <label class="form-label">Preferred retreat date</label>
+              <label class="form-label">Preferred retreat date (if applicable)</label>
               <select class="form-select">
-                <option value="" disabled selected>Select a date</option>
-                <option>June 20–22, 2026 — Summer Solstice</option>
+                <option value="" disabled selected>Select an option</option>
                 <option>August 14–16, 2026 — Late Summer</option>
                 <option>October 9–11, 2026 — Autumn</option>
                 <option>December 5–7, 2026 — Winter Closing</option>
+                <option>Not applicable — One-Day Intensive</option>
                 <option>No preference / flexible</option>
               </select>
             </div>
@@ -310,7 +319,7 @@
           <div class="w-[30%]">
             <p class="section-eyebrow mb-4">Section IV</p>
             <h2 class="font-display font-light text-[2rem] text-[#1A1814] leading-tight">Readiness &<br>Capacity</h2>
-            <p class="text-warm-gray text-[0.82rem] leading-[1.8] mt-4">We want to ensure the retreat is appropriate for where you are. These questions assess practical and psychological readiness.</p>
+            <p class="text-warm-gray text-[0.82rem] leading-[1.8] mt-4">We want to ensure the work and the container are appropriate for where you are. These questions assess practical and psychological readiness.</p>
           </div>
           <div class="flex-1 space-y-10">
             <div>
@@ -318,16 +327,16 @@
               <textarea class="form-textarea" style="min-height:100px" placeholder="Honest answer. No judgment."></textarea>
             </div>
             <div>
-              <label class="form-label">Is there anything in your current life circumstances that would make it difficult to be fully present and not distracted for a full weekend? A major crisis, deadline, or decision?</label>
-              <textarea class="form-textarea" style="min-height:120px" placeholder="If yes, describe briefly. If the timing is genuinely not right, there will be another retreat."></textarea>
+              <label class="form-label">Is there anything in your current life circumstances that would make it difficult to be fully present for the program you chose? A major crisis, deadline, or decision?</label>
+              <textarea class="form-textarea" style="min-height:120px" placeholder="If yes, describe briefly. If the timing is genuinely not right, there will be another opportunity."></textarea>
             </div>
             <div>
-              <label class="form-label">The retreat involves extended silence and the possibility that your fundamental assumptions about who you are will be challenged. How do you feel about that — not in theory, but actually?</label>
+              <label class="form-label">The work involves silence and the possibility that your fundamental assumptions about who you are will be challenged. How do you feel about that — not in theory, but actually?</label>
               <textarea class="form-textarea" style="min-height:160px" placeholder="Honest ambivalence is a much better sign than performed readiness."></textarea>
               <p class="question-note">Saying you are “completely ready” may be less honest than saying you are both drawn and apprehensive.</p>
             </div>
             <div>
-              <label class="form-label">What would it mean for you if the weekend changed nothing? How do you hold that possibility?</label>
+              <label class="form-label">What would it mean for you if the program changed nothing? How do you hold that possibility?</label>
               <textarea class="form-textarea" style="min-height:140px" placeholder="This question tests something important. Sit with it before answering."></textarea>
             </div>
           </div>
@@ -349,11 +358,12 @@
               <textarea class="form-textarea" style="min-height:160px" placeholder="This is your space. Use it as you see fit."></textarea>
             </div>
             <div>
-              <label class="form-label">A note on the investment: The retreat requires a $2,999 per person investment. Can you confirm that this is workable for you, without financial strain that would itself become a distraction?</label>
+              <label class="form-label">Can you confirm that the investment for your selected program is workable without financial strain? The One-Day Intensive is $999 per attendee; the retreat is $2,999 individually or $4,999 per couple.</label>
               <select class="form-select">
                 <option value="" disabled selected>Select one</option>
-                <option>Yes, this is workable</option>
-                <option>Yes, for a couple ($4,999)</option>
+                <option>Yes, the individual retreat investment is workable</option>
+                <option>Yes, the couple retreat investment is workable</option>
+                <option>Yes, the $999 One-Day Intensive investment is workable</option>
                 <option>I have a question about this — please reach out</option>
               </select>
             </div>
@@ -365,7 +375,7 @@
       <section data-design-id="section-submit-q6r7s8" class="border-t border-[#E8E4DF] pt-16 flex items-start justify-between">
         <div class="max-w-xl">
           <p class="text-warm-gray text-[0.88rem] leading-[1.85] mb-3">
-            By submitting this application you understand that it does not guarantee a place at the retreat. The teacher reads every application and will be in touch within 5–7 days. If accepted, you will receive details about the preparation call and deposit process.
+            By submitting this application you understand that it does not guarantee a place in either program. The teacher reads every application and will be in touch within 5–7 days. If accepted, you will receive details about preparation and reservation.
           </p>
           <p class="text-warm-gray text-[0.82rem] leading-[1.7]">
             Your responses are read only by the teacher. Nothing you share here is shared further.
@@ -391,12 +401,20 @@
     </div>
     <div class="flex items-center gap-10">
       <a href="homepage.html" class="nav-link">Home</a>
-      <a href="the-retreat.html" class="nav-link">The Retreat</a>
+      <a href="programs.html" class="nav-link">Programs</a>
       <a href="teachings.html" class="nav-link">Teachings</a>
       <a href="pricing.html" class="nav-link">Pricing</a>
     </div>
-    <p class="text-warm-gray text-[0.7rem] tracking-wide">Cold Springs, CA &nbsp;·&nbsp; © 2026 Nomindfulness</p>
+    <p class="text-warm-gray text-[0.7rem] tracking-wide">Cold Springs, CA &nbsp;·&nbsp; © 2026 Nomindfulness LLP</p>
   </footer>
+
+  <script>
+    const requestedProgram = new URLSearchParams(window.location.search).get('program');
+    const programChoice = document.getElementById('program-choice');
+    if (programChoice && ['one-day', 'retreat', 'unsure'].includes(requestedProgram)) {
+      programChoice.value = requestedProgram;
+    }
+  </script>
 
 </body>
 </html>

@@ -119,6 +119,25 @@ img {
     grid-template-columns: 1fr !important;
   }
 
+  form .col-span-2 {
+    grid-column: span 1 / span 1;
+  }
+
+  [data-design-id="one-day-rhythm"] .col-span-2 {
+    grid-column: span 1 / span 1;
+  }
+
+  section[data-design-id="program-paths-p1q2r3"] a + a,
+  section[data-design-id="program-comparison"] article + article,
+  section[data-design-id="one-day-pricing"] [class*="border-l"] {
+    border-left: 0;
+    border-top: 1px solid #E8E4DF;
+  }
+
+  section[data-design-id="one-day-pricing"] .flex.gap-4 {
+    flex-wrap: wrap;
+  }
+
   header > div[class*="flex"][class*="justify-between"] {
     flex-direction: column !important;
     align-items: flex-start !important;
