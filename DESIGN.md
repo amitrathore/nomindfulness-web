@@ -46,6 +46,11 @@ Nomindfulness offers direct self-inquiry in two deliberately small formats: a fo
 - **Three-Day Flagship Retreat**: The complete residential mountain container, all-inclusive and limited to four participants.
 - **Programs** is the primary navigation label. It leads to a duration-led comparison (“1 / 3”) so visitors choose by the depth their question requires, not by prestige.
 
+## Social preview
+- **Primary asset**: `assets/og-image-v2.jpg`, exactly 1200 × 630 px and optimized for social crawler delivery.
+- **Visual thesis**: The circle mark, “The end of seeking.”, both program formats, and the Sierra setting must remain legible at feed-card size.
+- **Descriptions**: Each route uses its own concrete invitation or useful detail rather than repeating generic site copy.
+
 ## Color usage
 - **Background #F8F5F0**: The primary canvas — warm cream, never harsh white. Every page breathes on this ground.
 - **Primary #1A1814**: Near-black with warmth for all primary text and the logo. Never pure #000000.
