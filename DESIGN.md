@@ -39,12 +39,13 @@ rounded:
 ---
 
 ## Overview
-Nomindfulness offers direct self-inquiry in two deliberately small formats: a focused one-day intensive and an ultra-exclusive three-day mountain retreat. Both serve high-intellect, high-achieving individuals who have mastered the external world but seek the final frontier: direct self-realization. The retreat remains the flagship; the intensive is a complete, lower-commitment entry into the same work. The brand communicates supreme confidence, intellectual rigor, and rare access. The aesthetic is spare, deliberate, and deeply premium — like a Zen monastery designed by Aman.
+Nomindfulness offers direct self-inquiry in three deliberately small formats: a lakeside half-day session, a focused one-day intensive, and an ultra-exclusive three-day mountain retreat. All three serve high-intellect, high-achieving individuals who have mastered the external world but seek the final frontier: direct self-realization. The retreat remains the flagship; the intensive and the half day are complete, lower-commitment entries into the same work. The brand communicates supreme confidence, intellectual rigor, and rare access. The aesthetic is spare, deliberate, and deeply premium — like a Zen monastery designed by Aman.
 
 ## Product hierarchy
-- **One-Day Intensive**: A concentrated format for participants with a mature, specific question. $999 per attendee, including lunch and refreshments. Location, capacity, and schedule remain to be confirmed.
+- **Still Waters**: A half-day format at Pinecrest Lake, 10am–2pm, for a deep enquiry into the true nature of reality. $799 per attendee, including a light lunch.
+- **One-Day Intensive**: A concentrated format for participants with a mature, specific question. $1,499 per attendee, including lunch and refreshments. Location, capacity, and schedule remain to be confirmed.
 - **Three-Day Flagship Retreat**: The complete residential mountain container, all-inclusive and limited to four participants.
-- **Programs** is the primary navigation label. It leads to a duration-led comparison (“1 / 3”) so visitors choose by the depth their question requires, not by prestige.
+- **Programs** is the primary navigation label. It leads to a duration-led comparison (“½ / 1 / 3”) so visitors choose by the depth their question requires, not by prestige.
 
 ## Social preview
 - **Primary asset**: `assets/og-image-v2.jpg`, exactly 1200 × 630 px and optimized for social crawler delivery.

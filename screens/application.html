@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Begin honestly. Apply for the $999 one-day intensive or the private three-day mountain retreat. Every application is read personally.">
+  <meta name="description" content="Begin honestly. Apply for the $799 Still Waters half day, the $1,499 one-day intensive, or the private three-day mountain retreat. Every application is read personally.">
   <meta property="og:site_name" content="Nomindfulness">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Apply — Nomindfulness">
-  <meta property="og:description" content="Begin honestly. Apply for the $999 one-day intensive or the private three-day mountain retreat. Every application is read personally.">
+  <meta property="og:description" content="Begin honestly. Apply for the $799 Still Waters half day, the $1,499 one-day intensive, or the private three-day mountain retreat. Every application is read personally.">
   <meta property="og:url" content="https://nomindfulness.com/screens/application.html">
   <meta property="og:image" content="https://nomindfulness.com/assets/og-image-v2.jpg">
   <meta property="og:image:width" content="1200">
@@ -16,7 +16,7 @@
   <meta property="og:image:alt" content="Nomindfulness — The end of seeking, beside a dramatic Sierra mountain reflected in a dark alpine lake.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Apply — Nomindfulness">
-  <meta name="twitter:description" content="Begin honestly. Apply for the $999 one-day intensive or the private three-day mountain retreat. Every application is read personally.">
+  <meta name="twitter:description" content="Begin honestly. Apply for the $799 Still Waters half day, the $1,499 one-day intensive, or the private three-day mountain retreat. Every application is read personally.">
   <meta name="twitter:image" content="https://nomindfulness.com/assets/og-image-v2.jpg">
   <meta name="twitter:image:alt" content="Nomindfulness — The end of seeking, beside a dramatic Sierra mountain reflected in a dark alpine lake.">
   <title>Application — Nomindfulness</title>
@@ -188,6 +188,7 @@
               <label class="form-label">Which program are you applying for?</label>
               <select class="form-select" id="program-choice" name="program">
                 <option value="" disabled selected>Select a program</option>
+                <option value="still-waters">Still Waters (Half Day)</option>
                 <option value="one-day">One-Day Intensive</option>
                 <option value="retreat">Three-Day Flagship Retreat</option>
                 <option value="unsure">I am unsure — help me choose</option>
@@ -224,7 +225,7 @@
                 <option>August 14–16, 2026 — Late Summer</option>
                 <option>October 9–11, 2026 — Autumn</option>
                 <option>December 5–7, 2026 — Winter Closing</option>
-                <option>Not applicable — One-Day Intensive</option>
+                <option>Not applicable — Still Waters or One-Day Intensive</option>
                 <option>No preference / flexible</option>
               </select>
             </div>
@@ -360,12 +361,13 @@
               <textarea class="form-textarea" style="min-height:160px" placeholder="This is your space. Use it as you see fit."></textarea>
             </div>
             <div>
-              <label class="form-label">Can you confirm that the investment for your selected program is workable without financial strain? The One-Day Intensive is $999 per attendee; the retreat is $2,999 individually or $4,999 per couple.</label>
+              <label class="form-label">Can you confirm that the investment for your selected program is workable without financial strain? Still Waters is $799 per attendee; the One-Day Intensive is $1,499 per attendee; the retreat is $2,999 individually or $4,999 per couple.</label>
               <select class="form-select">
                 <option value="" disabled selected>Select one</option>
                 <option>Yes, the individual retreat investment is workable</option>
                 <option>Yes, the couple retreat investment is workable</option>
-                <option>Yes, the $999 One-Day Intensive investment is workable</option>
+                <option>Yes, the $1,499 One-Day Intensive investment is workable</option>
+                <option>Yes, the $799 Still Waters investment is workable</option>
                 <option>I have a question about this — please reach out</option>
               </select>
             </div>
@@ -413,7 +415,7 @@
   <script>
     const requestedProgram = new URLSearchParams(window.location.search).get('program');
     const programChoice = document.getElementById('program-choice');
-    if (programChoice && ['one-day', 'retreat', 'unsure'].includes(requestedProgram)) {
+    if (programChoice && ['still-waters', 'one-day', 'retreat', 'unsure'].includes(requestedProgram)) {
       programChoice.value = requestedProgram;
     }
   </script>
